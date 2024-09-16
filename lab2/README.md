@@ -25,7 +25,7 @@ O servidor mantém o estado de cada cliente individualmente, armazenando o times
     - Recebe e exibe o conteúdo dos arquivos solicitados
     - Pode solicitar informações sobre o último acesso.
 
-## Instalação e COmpilação
+## Instalação e Compilação
 
 ### Clonar o repositório
 
@@ -54,3 +54,25 @@ Em outro terminal, execute o cliente:
 
 O cliente tenstará se conectar ao servidor local na porta 8080.
 
+## Como utilizar
+
+Após a inicialiadao do cliente e do servidor, voce poderá digitar os seguintes comandos:
+
+- **MyGet** `<arquivo>`: Solicita ao servidor o arquivo especificado.
+- **MyLastAccess**: Solicita ao servidor o instante do último acesso realizado por este cliente.
+
+### Exemplo de uso
+
+1. Solicitando um arquivo
+
+    MyGet exemplo.txt
+
+- O servidor enviará o conteúdo do arquivo `exemplo.txt`
+- Certifique-se que o arquivo esteja e exista no diretorio onde o servidor está sendo executado.
+
+2. Verificando o último acesso:
+
+    MyLastAccess
+
+- Se for a primeira vez acessando, o servidor responderá `Last Acess=Null`
+- Após alguma requisição `MyGet`, o servidor retornará o timestamp do último acesso.
