@@ -65,14 +65,14 @@ Após a inicialiadao do cliente e do servidor, voce poderá digitar os seguintes
 
 1. Solicitando um arquivo
 
-    MyGet exemplo.txt
+    ```MyGet exemplo.txt```
 
 - O servidor enviará o conteúdo do arquivo `exemplo.txt`
 - Certifique-se que o arquivo esteja e exista no diretorio onde o servidor está sendo executado.
 
 2. Verificando o último acesso:
 
-    MyLastAccess
+    ```MyLastAccess```
 
 - Se for a primeira vez acessando, o servidor responderá `Last Acess=Null`
 - Após alguma requisição `MyGet`, o servidor retornará o timestamp do último acesso.
