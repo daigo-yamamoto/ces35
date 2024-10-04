@@ -34,7 +34,8 @@ Neste passo, foi aplicada uma regra de filtro baseada nos endereços MAC dos hos
 
 ### Aplicacao da regra de filtro
 ```bash
-    sh sudo ovs-ofctl add-flow s1 "dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02,actions=drop"
+    sh sudo ovs-ofctl add-flow s1 "dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02,
+                                                                        actions=drop"
 ```
 
 ### Teste de conectividade
