@@ -1,5 +1,9 @@
 # Laboratório de Redes SDN com Mininet
 
+<p align="center">
+    Aluno: Bruno Daigo Yamamoto
+</p>
+
 ## Introdução
 
 Este documento descreve os passos realizados no laboratório de redes utilizando o Mininet e o controlador Ryu. O objetivo principal foi aplicar filtros de Camada 2, 3 e 4 para bloquear pacotes entre hosts em uma topologia de rede simples.
@@ -83,5 +87,5 @@ Foi configurado um servidor web no host h3 e uma regra para bloquear pacotes bas
   h2 curl h3
 ```
 
-Tive dificuldades na instalacao do curl na maquina virtual, entao cnao consegui realizar esse teste.
+Tive dificuldades na instalação do curl na máquina virtual, entao cnao consegui realizar esse teste.
 
